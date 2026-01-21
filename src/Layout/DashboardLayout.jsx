@@ -6,7 +6,7 @@ import { toast } from 'react-toastify'
 
 function DashboardLayout() {
     const token = localStorage.getItem("token")
-
+    const role=localStorage.getItem("role")
     useEffect(() => {
         if (!token) {
             toast.error("Please login first!")
@@ -17,6 +17,13 @@ function DashboardLayout() {
 
         return <Navigate to={"/login"} replace />
     }
+
+     if (role!=="admin") {
+
+        return <Navigate to={"/"} replace />
+    }
+
+
 
 
 

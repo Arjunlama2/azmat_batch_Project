@@ -1,0 +1,1 @@
+export const BASE_URL="https://abhit-batch-bn.onrender.com/api/v1"
