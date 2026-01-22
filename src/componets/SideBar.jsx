@@ -1,4 +1,5 @@
 import React from 'react'
+import { BiUser } from 'react-icons/bi';
 import { CgProductHunt } from 'react-icons/cg';
 import { MdDashboard } from "react-icons/md";
 import { useNavigate } from 'react-router';
@@ -13,7 +14,17 @@ const menu = [
         path: "/admin/product",
         title: "Product",
         icon: <CgProductHunt />
-    }
+    },
+      {
+        path: "/admin/user",
+        title: "User",
+        icon: <BiUser />
+    },
+    {
+        path: "/admin/banner",
+        title: "Banner",
+        icon: <CgProductHunt />
+    },
 ]
 
 function SideBar() {

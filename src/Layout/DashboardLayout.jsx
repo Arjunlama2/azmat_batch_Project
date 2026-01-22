@@ -36,7 +36,7 @@ function DashboardLayout() {
 
             </div>
 
-            <div>
+            <div className='w-full'>
                 <AdminHeader />
                 <Outlet />
 
